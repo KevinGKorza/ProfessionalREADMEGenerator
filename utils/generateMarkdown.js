@@ -11,7 +11,7 @@
     -[Usage] (#usage)
     -[Contribution] (#contribution)
     -[Testing] (#testing)
-    -[Additional Information] (#additional Information)
+    -[Additional Information] (#additional information)
   
     ## Description:
     ${data.description}
