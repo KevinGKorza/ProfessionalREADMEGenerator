@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
-const generateMarkdown = require("generateMarkdown.js");
+const generateMarkdown = require("./utils/generateMarkdown.js");
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -105,9 +105,10 @@ const questions = [
             "Boost", 
             "Mozilla", 
             "MIT", 
-            "GNU LGPLv3", 
-            "GNU GPLv3", 
-            "GNU AGPLv3", 
+            "GNU LGPLV3", 
+            "GNU GPLV3", 
+            "GNU AGPLV3",
+            "None", 
         ],
         validate: (userLicensingProject) => {
             if (userLicensingProject) {
@@ -173,4 +174,3 @@ function init() {
 
 // Function call to initialize app
 init();
-
