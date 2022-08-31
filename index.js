@@ -1,11 +1,16 @@
-// TODO: Include packages needed for this application
+//Packages needed for this application to run
 const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown.js");
 
-// TODO: Create an array of questions for user input
+//An array of questions that will be asked and hopefully answered by the user 
+//If the user decides on not answering the presented question then they won't be able to continue
+//A message will appear letting them know that they need to answer the question
+//The user needs to "npm install --save inquirer" first 
 const questions = [
-    //Project Title 
+
+    //The Project Title question
+    //The user is asked what the name of their project is for the README generation
     {
         type: "input",
         name: "title",
@@ -20,7 +25,8 @@ const questions = [
         },
     },
 
-    //Description of project
+    //The Description of project
+    //The user is asked if they could describe their project
     {
         type: "input",
         name: "description",
@@ -35,7 +41,8 @@ const questions = [
         },
     },
 
-    //Installation of project
+    //The Installation of the project
+    //The user is asked how they installed their project
     {
         type: "input",
         name: "installation",
@@ -50,7 +57,8 @@ const questions = [
         },
     },
 
-    //Usage information of project
+    //The Usage information of the project
+    //The user is asked how they want their project used
     {
         type: "input",
         name: "usage",
@@ -65,7 +73,8 @@ const questions = [
         },
     },
 
-    //Contribution section of project
+    //The Contribution section of the project
+    //The user is asked what they did to contribute to the project
     {
         type: "input",
         name: "contribution",
@@ -80,7 +89,8 @@ const questions = [
         },
     },
 
-    //Testing section of project
+    //The Testing section of the project
+    //The user is asked how they tested their project
     {
         type: "input",
         name: "testing",
@@ -95,7 +105,10 @@ const questions = [
         },
     },
 
-    //Licensing section of project 
+    //The Licensing section of the project 
+    //The user is asked what license they used for the project
+    //An appropriate badge will appear once the selction has been made
+    //No badge will appear if "None" has been chosen
     {
         type: "list",
         name: "licensing",
@@ -105,9 +118,9 @@ const questions = [
             "Boost", 
             "Mozilla", 
             "MIT", 
-            "GNU LGPLV3", 
-            "GNU GPLV3", 
-            "GNU AGPLV3",
+            "GNU LGPLv3", 
+            "GNU GPLv3", 
+            "GNU AGPLv3",
             "None", 
         ],
         validate: (userLicensingProject) => {
@@ -120,7 +133,9 @@ const questions = [
         },
     },
 
-    //Github
+    //The Github section of the project
+    //This is where the user is asked what their Github user name is for the README file generation
+    //Once provided, their GitHub account will be linked 
     {
         type: "input",
         name: "github",
@@ -135,7 +150,8 @@ const questions = [
         },
     },
 
-    //Email 
+    //The Email section of the project
+    //This is where the user is asked what their email is for the README file generation
     {
         type: "input",
         name: "email",
@@ -155,8 +171,8 @@ const questions = [
 ];
 
 
-
-// TODO: Create a function to write README file
+//This is the function to write/generate the README file
+//If succesful, then the user will get a message in the console saying that their file has been created
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) => {
         if (err) throw err;
@@ -164,7 +180,9 @@ function writeToFile(fileName, data) {
     });
 }
 
-// TODO: Create a function to initialize app
+
+//This is the function to initialize the application
+//Ties everything together
 function init() {
     inquirer.prompt(questions).then(function (userInputs) {
         console.log(userInputs);
