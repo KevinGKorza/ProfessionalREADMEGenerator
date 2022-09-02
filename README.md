@@ -11,6 +11,11 @@ User Story:
 -SO THAT I can quickly create a professional README for a new project
 
 
+
+
+
+
+
 Accepted Criteria:
 
 -GIVEN a command-line application that accepts user input
@@ -41,6 +46,14 @@ Accepted Criteria:
 -WHEN I click on the links in the Table of Contents
 
 -THEN I am taken to the corresponding section of the README
+
+
+
+
+
+
+
+
 
 
 
