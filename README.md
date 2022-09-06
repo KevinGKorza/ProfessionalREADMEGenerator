@@ -40,7 +40,9 @@ Accepted Criteria:
 
 
 Screencapture of generated README:
+<img width="1728" alt="Screen Shot 2022-09-06 at 1 50 10 PM" src="https://user-images.githubusercontent.com/107637260/188705129-24076ef1-2375-4f81-a2f3-f8529dde2df0.png">
 
 
 
-Video of generated README:
+Video of generated README: 
+https://www.youtube.com/watch?v=-cCkjtDsuiU&t=3s
