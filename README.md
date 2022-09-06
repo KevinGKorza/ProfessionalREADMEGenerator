@@ -1,6 +1,6 @@
 This is the Professional README Generator assignment (Module 9 Challenge)
 
-The task was to create a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package (Links to an external site.)
+The task was to create a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package 
 
 User Story: 
 
@@ -40,9 +40,13 @@ Accepted Criteria:
 
 
 Screencapture of generated README:
+
+
 <img width="1728" alt="Screen Shot 2022-09-06 at 1 50 10 PM" src="https://user-images.githubusercontent.com/107637260/188705129-24076ef1-2375-4f81-a2f3-f8529dde2df0.png">
 
 
 
 Video of generated README: 
+
+
 https://www.youtube.com/watch?v=-cCkjtDsuiU&t=3s
