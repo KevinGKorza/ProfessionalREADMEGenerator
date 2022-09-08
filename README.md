@@ -49,4 +49,4 @@ Screencapture of generated README:
 Video of generated README: 
 
 
-https://www.youtube.com/watch?v=-cCkjtDsuiU&t=3s
+https://youtu.be/-cCkjtDsuiU
